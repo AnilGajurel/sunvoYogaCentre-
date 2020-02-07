@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+
+  <title>Sunvo Yoga Centre</title>
+
+
+	{% load static %}
+  <link rel="stylesheet" type="text/css" href=" {% static 'sunvoyoga/css/style.css'%}" /><!--css-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Facebook icon-->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"> <!-- Bootstrap CSS -->
+
+
+
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="127.0.0.1:8000">Sunvo Yoga</a>
+          <a class="nav-link" href="#">Sign out</a>
+       
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="dashboard">
+                  <span data-feather="home"></span>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/show">
+                  <span data-feather="user"></span>
+                  Admin-User
+                </a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" href="showCustomer">
+                  <span data-feather="users"></span>
+                  Customers
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Dashboard</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+          </div>
+          </div>
+
+
+          <div class="showingAllElements">
+             {% block content %}
+
+
+
+
+             {% endblock %}
+
+          </div>
+
+        </main>
+      </div>
+    </div>
+
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+  </body>
+</html>

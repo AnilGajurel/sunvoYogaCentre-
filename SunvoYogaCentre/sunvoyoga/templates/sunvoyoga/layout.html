@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <title>Sunvo Yoga Centre</title>
+  
+
+	{% load static %}
+  <link rel="stylesheet" type="text/css" href=" {% static 'sunvoyoga/css/style.css'%}" /><!--css-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Facebook icon-->
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}" ></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"> <!-- Bootstrap CSS -->
+
+
+
+</head>
+<body>
+
+ <div id="main">  <!--body/main start-->
+
+  <div id="header">  <!--header start-->
+
+
+
+   <div class="logo"><img src="{% static 'sunvoyoga/images/yogaicon.jpg'%}" alt="logo" class="logo-widthheight" >
+   </div>
+
+
+   <!--<div class="headername"><h1>Sunvo Yoga Centre</h1></div> -->
+
+   <div class="headername"><p>Sunvo Yoga Centre</p></div>
+
+   <div id="nav">
+   <a href="/home">Home</a>
+   <a href="/classes">Classes</a>
+   <a href="/booking">Booking</a>
+<!--  <a href="/signup">Sign Up</a>-->
+<!--   <a href="/login">Log In</a>-->
+
+   {% if  request.session.email %}
+   <a href="#">Hi,{{request.session.email}}</a>
+   <a href="/logout">Log Out</a>
+
+   {% else %}
+`  <a href="/signup">Sign Up</a>
+   <a href="/login">Log In</a>
+   {% endif %}
+
+
+   </div>
+
+  </div>  <!--header end-->
+
+
+    {% block body %}
+
+
+
+
+     {% endblock %}
+
+
+
+    <div class="Footer">   <!-- footer start-->
+
+	  <div class="FooterContactAddress"> <!-- FooterContactAddress start-->
+	   <h5 class="footer_main_point">Contact Address</h5>
+	   <h6>Sunvo Yoga Centre</h6>
+	   <h6>Kathmandu,Nepal</h6>
+	   <h6>01-4496484,4483738</h6>
+	   <h6>info@SunvoYogaCentre</h6>
+
+	  </div>  <!-- FooterContactAddress start-->
+
+
+
+	  <div class="footerFollowUs">  <!-- Footerfollowus start-->
+	  	<h5 class="footer_main_point">Follow Us </h5>
+	  	<a href="https://twitter.com" class="fa fa-twitter"></a>
+	  	<a href="https://youtube.com" class="fa fa-youtube"></a>
+	  	<a href="https://facebook.com" class="fa fa-facebook"></a>
+	  </div>    <!-- Footerfollowus start-->
+
+
+	  	<h5 class="footer_main_point">Read also</h5>
+	  	<h6>Privacy Policy</h6>
+	  	<h6>Terms and Conditions</h6>
+	 	<h6>&copy;Sunvo Yoga Centre.All Rights Reserved.</h6>
+
+
+
+    </div>  <!-- footer end-->
+
+ </div>  <!--body/main end-->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

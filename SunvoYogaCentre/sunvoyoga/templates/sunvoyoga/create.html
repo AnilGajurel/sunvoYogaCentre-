@@ -1,0 +1,60 @@
+{% extends 'sunvoyoga/layout.html' %}
+
+{% block body %}
+
+{% load static %}
+
+  <div class="Content">  <!--Content start-->
+
+    <form method="POST" action="/create">{% csrf_token %}
+        <div class="container"><br>
+
+            <div class="form-group row">
+                <label class="col-sm-1 col-form-label"></label>
+                <div class="col-sm-4">
+                     <h2>Enter your data</h2>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">User_ID:</label>
+                <div class="col-sm-4">
+                    {{form.uid}}
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">User_Name:</label>
+                <div class="col-sm-4">
+                    {{form.username}}
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Email:</label>
+                <div class="col-sm-4">
+                    {{form.email}}
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Password:</label>
+                <div class="col-sm-4">
+                    {{form.password}}
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-1 col-form-label"></label>
+                <div class="col-sm-4">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </form>
+
+  </div>
+
+{% endblock %}

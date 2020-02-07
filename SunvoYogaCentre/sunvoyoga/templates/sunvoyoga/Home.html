@@ -1,0 +1,135 @@
+{% extends 'sunvoyoga/layout.html' %}
+
+
+
+{% block body %}
+
+{% load static %}
+
+  <div class="Content">  <!--Content start-->
+	
+
+
+	 <script>
+			let images=[" {% static 'sunvoyoga/images/aa.jpg'%}","{% static 'sunvoyoga/images/bb.jpg'%}" ];
+			let i=0;
+
+			function fimageshow(){
+			   document.getElementById("slideimage").src=images[i];
+			   if(i<(images.length-1))
+			   i++;
+			   else
+			   i=0;
+			}
+			setInterval(fimageshow,2500);
+		</script>
+
+ 
+	<div class="slideshow">
+	<img src="images/aa.jpg" alt="Home page First Image" id="slideimage">
+	</div>
+	
+	<!---
+	<div class="textanimation">
+		<h1 class="text">Yoga Connecting to You....</h1>	
+	</div>
+	-->
+
+
+	<!--
+
+	<div class="homewelcome">
+	<h5 class="innerhomewelcome">Welcome to Sunvo.</h5><br>
+	<marquee behavior="scroll" direction="left" scrollamount="15">Welcome to Sunvo</marquee>
+</div>
+
+-->
+<div class="Textanimation">
+	<h1 class="noselect" data-text="Yoga Connecting to you. ">Yoga Connecting to you. </h1>
+</div>
+
+
+
+<div class="card-container">
+
+		<div class="upper-container">
+			<div class="image-container">
+				<img src="{% static 'sunvoyoga/images/hatha.jpg'%}" />
+			</div>
+		</div>
+
+		<div class="lower-container">
+			<div>
+				<h4>Hatha Yoga</h4>
+			</div>
+			<div>
+				<p>Hatha is the most beginner friendly style of yoga. It is relatively slow paced,with postures being held ...</p>
+			</div>
+			<div>
+				<a href="/booking" class="btn">Book Now</a>
+				<a href="/classes" class="btn">Quick View</a>
+			</div>
+		</div>
+
+</div>
+
+
+<div class="card-container1">
+
+		<div class="upper-container">
+			<div class="image-container">
+				<img src="{% static 'sunvoyoga/images/Ashtanga.jpg'%}" />
+			</div>
+		</div>
+
+		<div class="lower-container">
+			<div>
+				<h4>Ashtan Yoga</h4>
+			</div>
+			<div>
+				<p>Ashtanga is a dynamic, physically demanding practice focussed on synchronizing breath and </p>
+			</div>
+			<div>
+				<a href="/booking" class="btn">Book Now</a>
+				<a href="/classes" class="btn">Quick View</a>
+			</div>
+		</div>
+
+</div>
+
+
+<div class="card-container2">
+
+		<div class="upper-container">
+			<div class="image-container">
+				<img src="{% static 'sunvoyoga/images/Kundalini.jpg'%}" />
+			</div>
+		</div>
+
+		<div class="lower-container">
+			<div>
+				<h4>Kundalini Yoga</h4>
+			</div>
+			<div>
+				<p>Kundalini Yoga can cultivate self-awareness and spiritual connection. The focus is on dynamic breathwork</p>
+			</div>
+			<div>
+				<a href="/booking" class="btn">Book Now</a>
+				<a href="/classes" class="btn">Quick View</a>
+			</div>
+		</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+  </div>  <!--Content end-->
+
+
+{% endblock%}

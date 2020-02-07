@@ -1,0 +1,150 @@
+{% extends 'sunvoyoga/layout.html' %}
+
+{% block body %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function validateForm()
+{
+  var e = document.forms["myform"]["email"].value;
+  var pw = document.forms["myform"]["password"].value;
+  var username = document.forms["myform"]["username"].value;
+  var fn = document.forms["myform"]["fname"].value;
+  var ln = document.forms["myform"]["lname"].value;
+  var rpw = document.forms["myform"]["repassword"].value;
+
+  var atposition=e.indexOf("@");
+  var dotposition=e.lastIndexOf(".");
+
+
+ if (username== "" )
+   {
+    alert("please enter username");
+    return false;
+   }
+
+   if (fn== "" )
+   {
+    alert("please enter First name");
+    return false;
+   }
+   if (ln== "" )
+   {
+    alert("please enter Last name");
+    return false;
+   }
+
+   if (e== "" )
+   {
+    alert("please enter email");
+    return false;
+   }
+
+  if (atposition<1 || dotposition<atposition+2 || dotposition+2>=e.length)
+  {
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);
+  return false;
+  }
+
+   if (pw == "")
+  {
+    alert("please enter password");
+    return false;
+  }
+
+   if (pw.length < 0 || pw.length >= 18)
+  {
+    alert("Invalid Length!, Password must greater then 4 and less then 18 in Length.");
+    return false;
+  }
+ if (rpw== "" )
+   {
+    alert("please enter repeat password ");
+    return false;
+   }
+ if(pw != rpw)
+   {
+    alert("password not match");
+    return false;
+   }
+
+
+}
+</script>
+
+
+  <div class="Content">  <!--Content start-->
+  
+
+       <form  class="signupform" method="POST" action="/signup" name="myform"  onsubmit="return validateForm()">
+           {% csrf_token %}
+        <h1>Sign Up</h1>
+
+        <div class="signup_form_element">
+          <input type="text"  name="fname" placeholder=" First Name"  >
+        </div>
+
+        <div class="signup_form_element">
+          <input type="text" name="lname" placeholder=" Last Name"  >
+
+        </div>
+
+         <div class="signup_form_element">
+          <input type="text"  placeholder="Enter UserName" name="username"  >
+        </div>
+
+        <div class="signup_form_element">
+          <input type="text"  placeholder="Mobile number or email"  name="email" >
+        </div>
+
+        <div class="signup_form_element">
+          <input type="password" name="password" placeholder=" Password"  >
+
+        </div>
+
+        <div class="signup_form_element">
+         <input type="password" name="repassword" placeholder="Repeat Password"   >
+
+        </div>
+
+
+        <h6>Gender</h6>
+        <input type="radio" name="gender" value="male" > Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+
+        <h6>Birthday</h6>
+        <input type="date" name="bday">
+
+        <div class="signupbottom">
+          <button type="submit" class="btn1 btn-primary btn-lg">Sign-up</button>
+        </div>
+
+    </form>
+
+    <div>
+        {% for message in messages %}
+        <h3 >{{message}}</h3>
+        {% endfor %}
+    </div>
+   
+
+  </div>  <!--Content end-->
+
+{% endblock%}

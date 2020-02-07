@@ -1,0 +1,113 @@
+{% extends 'sunvoyoga/dashboard.html' %}
+
+{% block content %}
+
+<style>
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+</style>
+
+  <div class="Content">  <!--Content start-->
+
+        <h2>Admin Users</h2>
+        <input style="margin-top:10px;margin-bottom:10px" type="text" id="search" class="form-control col-md-4" style="margin-left:10px"/>
+
+      <table class="table table-striped table-bordered table-sm" class="table">
+          <thead class="thead-dark">
+            <tr>
+                <th>User ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+          {% for user in users %}
+            <tr>
+                <td>{{ user.id}}</td>
+                <td>{{ user.username}}</td>
+                <td>{{ user.email}}</td>
+                <td>{{ user.password}}</td>
+                <td>
+                    <a href="/edit/{{user.id}}"><span class="glyphicon glyphicon-pencil">Edit</span></a>
+                    <a href="/delete/{{user.id}}"> <span class="glyphicon glyphicon-trash">Delete</span></a>
+                </td>
+            </tr>
+
+          {% endfor %}
+
+          </tbody>
+      </table><br>
+
+      <center><a href="/create"  class="btn btn-primary">Add New User</a> </center>
+
+
+
+
+
+
+<form method="post" action="/show">
+{% csrf_token %}
+	<button type="submit" name="prev" value="prev" id="prev">prev</button>
+	<input style="width:40px;" type="number" value="{{page}}" name="page" id="page" />
+	<button type="submit" name="next" value="next" id="next">next</button>
+</form>
+
+
+
+<script>
+	$(document).ready(()=>{
+		$(".sidebar").find(".active").removeClass("active");
+		$("#user").addClass("active");
+
+		$("#search").keyup(()=>{
+			$.ajax({
+				data:{search:$("#search").val()},
+				url:'/search',
+				method:'GET',
+				success:function(data){
+					console.log(data);
+					$("tr").not("tr:first").remove();
+					var html="";
+					for(d of data){
+						html+="<tr>";
+							html+="<td>"+d.id+"</td>";
+							html+="<td>"+d.username+"</td>";
+							html+="<td>"+d.email+"</td>";
+							html+="<td>"+d.password+"</td>";
+							html+="<td><a href='/edit/"+d.password+"'>edit</a> | <a href='/delete/"+d.password+"'>delete</a></td>";
+						html+="</tr>"
+
+						$("table").append(html);
+					}
+
+				},error:function(error){
+				console.log(error)
+				},complete:function(){
+				console.log("complete")
+				}
+			})
+		})
+	})
+</script>
+
+
+
+
+  </div>
+
+{% endblock %}
