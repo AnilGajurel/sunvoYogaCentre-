@@ -38,7 +38,7 @@ def booking(request):
 
 
 def search(request):
-    users=User.objects.filter(email=request.GET['search']).values()
+    users=User.objects.filter(email__contains=request.GET['search']).values()
     return JsonResponse(list(users),safe=False)
 
 

@@ -8,7 +8,7 @@
 
 	{% load static %}
   <link rel="stylesheet" type="text/css" href=" {% static 'sunvoyoga/css/style.css'%}" /><!--css-->
-
+  <script src="{% static 'sunvoyoga/javascript/jquery-3.4.1.min.js' %}" ></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Facebook icon-->
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -35,14 +35,14 @@
                   Dashboard <span class="sr-only">(current)</span>
                 </a>
               </li>
-              <li class="nav-item">
+              <li id="user" class="nav-item">
                 <a class="nav-link" href="/show">
                   <span data-feather="user"></span>
                   Admin-User
                 </a>
               </li>
             
-              <li class="nav-item">
+              <li  class="nav-item">
                 <a class="nav-link" href="showCustomer">
                   <span data-feather="users"></span>
                   Customers

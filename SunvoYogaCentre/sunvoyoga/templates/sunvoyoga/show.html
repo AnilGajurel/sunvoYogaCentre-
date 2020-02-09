@@ -73,7 +73,7 @@ tr:nth-child(even) {
 	$(document).ready(()=>{
 		$(".sidebar").find(".active").removeClass("active");
 		$("#user").addClass("active");
-
+})
 		$("#search").keyup(()=>{
 			$.ajax({
 				data:{search:$("#search").val()},
@@ -82,8 +82,9 @@ tr:nth-child(even) {
 				success:function(data){
 					console.log(data);
 					$("tr").not("tr:first").remove();
-					var html="";
+					
 					for(d of data){
+            var html="";
 						html+="<tr>";
 							html+="<td>"+d.id+"</td>";
 							html+="<td>"+d.username+"</td>";
@@ -102,7 +103,7 @@ tr:nth-child(even) {
 				}
 			})
 		})
-	})
+
 </script>
 
 
