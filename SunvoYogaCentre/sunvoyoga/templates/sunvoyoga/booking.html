@@ -5,91 +5,33 @@
 {% load static %}
 
 
-<script>
-function validateForm()
-{
-  var fn = document.forms["myform"]["fname"].value;
-  var ln = document.forms["myform"]["lname"].value;
-  var email = document.forms["myform"]["email"].value;
-  var mn = document.forms["myform"]["mobnumber"].value;
-  var gender= document.forms["myform"]["gender"].value;
-
-  var atposition=email.indexOf("@");
-  var dotposition=email.lastIndexOf(".");
-
-
-   if (fn== "" )
-   {
-    alert("please enter First name");
-    return false;
-   }
-   if (ln== "" )
-   {
-    alert("please enter Last name");
-    return false;
-   }
-   if (mn== "" )
-   {
-    alert("please enter mobile number");
-    return false;
-   }
-    if(isNaN(mn))
-    {
-       alert("Enter numeric value")
-       return false;
-    }
-    if(mn.length<10)
-    {
-       alert("Enter at least 10 digit")
-       return false;
-    }
-
-    if (email == "" )
-   {
-    alert("please enter email");
-    return false;
-   }
-
-  if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length)
-  {
-  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);
-  return false;
-  }
-
-
-
-}
-</script>
-
-
-
 
   <div class="Content">  <!--Content start-->
   
 
-       <form class="Bookingform" method="POST" action="/booking" name="myform"  onsubmit="return validateForm()">
+       <form class="Bookingform" method="POST" action="/booking" name="myform"  onsubmit="return validate_for_booking_Form()">
            {% csrf_token %}
         <h1>Booking</h1>
 
         <div class="Booking_form_element">
-          <input type="text" placeholder=" First Name" name="fname" >
+          <input type="text" placeholder=" First Name" name="fname" required>
         </div>
 
         <div class="Booking_form_element">
-              <input type="text" placeholder=" Last Name" name="lname" >
+              <input type="text" placeholder=" Last Name" name="lname" required>
         </div>
 
         <div class="Booking_form_element">
-          <input type="text" placeholder="Email address" name="email" >
+          <input type="text" placeholder="Email address" name="email" required>
         </div>
 
          <div class="Booking_form_element">
-          <input type="text" id="numb" placeholder="Mobile number " name="mobnumber" >
+          <input type="text" id="numb" placeholder="Mobile number " name="mobnumber" required>
         </div>
         
           <h6>Select class</h6>
-          <select>
-             <option value="volvo">Select a class</option>
+          <select required name="classes">
+             <option value="">Select a class</option>
              <option value="Hatha">Hatha Yoga</option>
              <option value="Ashtan">Ashtan Yoga</option>
              <option value="Kundalini">Kundalini Yoga</option>
@@ -101,7 +43,7 @@ function validateForm()
         
         
         <h6>Gender</h6>
-        <input type="radio" name="gender" value="male" > Male 
+        <input type="radio" name="gender" value="male" required> Male
         <input type="radio" name="gender" value="female"> Female
         <input type="radio" name="gender" value="other"> Other  
     

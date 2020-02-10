@@ -15,34 +15,10 @@ def home(request):
 def classes(request):
     return render(request,"sunvoyoga/Classes.html")
 
-
-
-def booking(request):
-    if request.method == "POST":
-        fname = request.POST['fname ']
-        lname  = request.POST['lname ']
-        email  = request.POST['email ']
-        mobnumber  = request.POST['mobnumber ']
-        classes  = request.POST['classes ']
-        gender  = request.POST['gender  ']
-
-        bookingdata = Booking(fname=fname, lname=lname, username=username, email=email,
-                              mobnumber=mobnumber, classes=classes,gender=gender)
-        bookingdata.save()
-        print("Booked ")
-        return redirect('/')
-
-    else:
-        return render(request, "sunvoyoga/booking.html")
-
-
-
 def search(request):
     users=User.objects.filter(email__contains=request.GET['search']).values()
     return JsonResponse(list(users),safe=False)
 
-
-#Admin signup
 def create(request):
     if request.method=="POST":
         form=UserForm(request.POST)
@@ -56,6 +32,22 @@ def create(request):
 
     form=UserForm()
     return render(request,"sunvoyoga/create.html",{'form':form})
+
+
+def booking(request):
+    if request.method=="POST":
+        fname=request.POST['fname']
+        lname = request.POST['lname']
+        email = request.POST['email']
+        gender = request.POST['gender']
+        mobnumber = request.POST['mobnumber']
+        classes=request.POST['classes']
+        bookingdata=Booking(fname=fname,lname=lname,email=email,
+                            mobnumber=mobnumber,classes=classes,gender=gender)
+        bookingdata.save()
+        print(" Booked")
+    return render(request,"sunvoyoga/booking.html")
+
 
 
 def edit(request,id):
@@ -74,10 +66,10 @@ def delete(request,id):
     return redirect("/")
 
 
-def adminLogin(request):
+def adminlogin(request):
     return render(request,"sunvoyoga/AdminLogin.html")
 
-def adminLogOut(request):
+def adminlogout(request):
     auth.logout(request)
     return render(request,"sunvoyoga/home.html")
 
@@ -105,7 +97,7 @@ def show(request):
     return render(request, "sunvoyoga/show.html", {'users': users, 'page': page})
 
 
-#Sign up for customer
+
 def signup(request):
     if request.method=="POST":
         fname=request.POST['fname']
@@ -114,6 +106,8 @@ def signup(request):
         email = request.POST['email']
         password = request.POST['password']
         repassword = request.POST['repassword']
+        gender = request.POST['gender']
+        bday = request.POST['bday']
 
         if password==repassword:
             if Customer.objects.filter(username=username).exists():
@@ -124,7 +118,8 @@ def signup(request):
                 return redirect('/signup')
             else:
                 customerdata=Customer(fname=fname,lname=lname,username=username,email=email,
-                                            password=password,repassword=repassword)
+                                            password=password,repassword=repassword,
+                                      gender=gender,bday=bday)
                 customerdata.save()
                 print("user created")
                 return redirect('/')
@@ -136,10 +131,10 @@ def signup(request):
         return render(request,"sunvoyoga/signup.html")
 
 
-#login for Customer
 def login(request):
     return render(request,"sunvoyoga/login.html")
 
+@Authenticate.valid_customer
 def entryCustomer(request):
         request.session['email']=request.POST['email']
         request.session['password'] = request.POST['password']
@@ -151,20 +146,8 @@ def booking(request):
     return render(request,"sunvoyoga/booking.html",{'Customer':customer})
 '''
 @Authenticate.valid_customer
-def booking(request):
-    if request.method=="POST":
-        form=BookingForm(request.POST)
-        if form.is_valid():
-            try:
-                form.save()
-                return redirect("/")
-            except:
-                pass
-
-
-    form=BookingForm()
-    return render(request,"sunvoyoga/booking.html",{'form':form})
-
+def deleteData(request):
+    return ;
 
 def logout(request):
     del request.session['email']
@@ -190,7 +173,6 @@ def showCustomer(request):
     else:
         customers = Customer.objects.raw("select * from customer limit 2 offset 0")
     return render(request,"sunvoyoga/showCustomer.html",{'customers':customers,'page':page})
-
 
 
 

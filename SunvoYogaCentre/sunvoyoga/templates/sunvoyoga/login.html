@@ -3,42 +3,6 @@
 {% block body %}
 
 
-<script>
-function validateForm()
-{
-  var x = document.forms["myform"]["email"].value;
-  var y = document.forms["myform"]["password"].value;
-
-  var atposition=x.indexOf("@");
-  var dotposition=x.lastIndexOf(".");
-
-   if (x == "" )
-   {
-    alert("please enter email");
-    return false;
-   }
-
-  if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length)
-  {
-  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);
-  return false;
-  }
-
-   if (y == "")
-  {
-    alert("please enter password");
-    return false;
-  }
-
-   if (y.length < 0 || y.length >= 18)
-  {
-    alert("Invalid Length!, Password must greater then 4 and less then 18 in Length.");
-    return false;
-  }
-
-}
-</script>
-
   <div class="Content">  <!--Content start-->
 
 

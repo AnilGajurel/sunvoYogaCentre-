@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class User(models.Model):
-    uid=models.CharField(max_length=50)
+    id = models.AutoField(auto_created=True, primary_key=True)
     username = models.CharField(max_length=100)
     email = models.EmailField()
     password= models.CharField(max_length=60)
@@ -18,7 +18,8 @@ class Customer(models.Model):
     email = models.CharField(max_length=50)
     password= models.CharField(max_length=60)
     repassword= models.CharField(max_length=60)
-
+    gender=models.CharField(max_length=20)
+    bday=models.CharField(max_length=20)
 
     class Meta:
         db_table="customer"
@@ -26,8 +27,8 @@ class Customer(models.Model):
 
 class Booking(models.Model):
     id = models.AutoField(auto_created=True, primary_key=True)
-    firstname = models.CharField(max_length=100)
-    lastname = models.CharField(max_length=100)
+    fname = models.CharField(max_length=100)
+    lname = models.CharField(max_length=100)
     email = models.CharField(max_length=50)
     mobnumber=models.CharField(max_length=60)
     gender = models.CharField(max_length=100)
@@ -35,4 +36,5 @@ class Booking(models.Model):
 
     class Meta:
         db_table = "booking"
+
 

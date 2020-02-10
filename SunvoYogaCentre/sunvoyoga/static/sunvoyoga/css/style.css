@@ -919,7 +919,7 @@ font-size: 20px;
   border-radius: 30px;
   position: absolute;
   left: 50%;
-  top: 46%;
+  top: 42%;
   transform: translate(-50%,-50%);
 }
 
@@ -971,7 +971,7 @@ font-size: 20px;
 {
   position: absolute;
   left: 15%; 
-  top: 86%;
+  top: 93%;
 }
 .btn1
 {
