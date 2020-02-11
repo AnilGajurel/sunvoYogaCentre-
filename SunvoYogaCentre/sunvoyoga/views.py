@@ -16,7 +16,7 @@ def classes(request):
     return render(request,"sunvoyoga/Classes.html")
 
 def search(request):
-    users=User.objects.filter(email__contains=request.GET['search']).values()
+    users=User.objects.filter(email__contains=request.GET['search'])[0:2].values()
     return JsonResponse(list(users),safe=False)
 
 def create(request):
@@ -176,7 +176,7 @@ def showCustomer(request):
 
 
 
-@Authenticate.valid_user
+#@Authenticate.valid_user
 def dashboard(request):
     return render(request,"sunvoyoga/dashboard.html")
 

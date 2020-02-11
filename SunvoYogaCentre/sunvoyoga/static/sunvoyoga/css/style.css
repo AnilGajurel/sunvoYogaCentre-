@@ -116,7 +116,11 @@ padding-top: 4px;
 	height:1050px;
 	
 }
+.Contentclass
+{
+	height:2150px;
 
+}
 
 
 
@@ -519,14 +523,13 @@ font-size: 20px;
 /*class making card*/
 
 
-
 .card-containerClass{ /*image background part*/
 	width: 1313px;
-	height: 370px;
+	height: 265px; /*changeit*/
 	background: #FFF;
 	border-radius: 6px;
 	position: absolute;
-	top: 30.60%;
+	top: 15.90%;
 	left: 20px;
 	box-shadow: 0px 1px 10px 1px #000;
 	overflow: hidden;
@@ -538,16 +541,16 @@ font-size: 20px;
 
 .image-containerClass img{ /*for image only and round*/
 	width: 310px;
-	height: 200px;
+	height: 160px; /*changeit*/
 }
-						
+
 						/*lower-containerClass mean all text btn */
 
 .lower-containerClass{  /*for below image text part*/
-	height: 280px;
+	height: 200px;
 	background: #FFF;
 	padding: 20px;
-	padding-top: 10px;
+	padding-top: 1px;/*changeit*/
 
 }
 .lower-containerClass h4{ /*for title*/
@@ -568,13 +571,13 @@ font-size: 20px;
 .lower-containerClass h5{ /*for book and view buttom*/
 	font-size: 16px;
 	color: black; /*descries... color*/
-	margin-bottom: 15px; /*up and downing buttom*/
+	margin-bottom: 10px; /*up and downing buttom*/
 	position: absolute;
-	top: 60px;
+	top: 35px; /*changeit*/
 	left: 320px;
 
 }
-.lower-containerClass .btn{ 
+.lower-containerClass .btn{
 	background: #7F00FF;
 	border: none;
 	color: white;
@@ -591,22 +594,23 @@ font-size: 20px;
 }
 .timeprice
 {
-	position: absolute;
+	position:absolute;
 	left: 40px;
-	top: 260px;
-	font-size: 20px;
+	top: 196px;   /*changeit*/
+	font-size: 17px;/*changeit*/
 	font-weight: bold;
 }
+
 
 /*for 2 yoga class*/
 
 .card-containerClass1{ /*image background part*/
 	width: 1313px;
-	height: 370px;
+	height: 265px; /*changeit*/
 	background: #FFF;
 	border-radius: 6px;
 	position: absolute;
-	top: 67%;
+	top: 28.50%;
 	left: 20px;
 	box-shadow: 0px 1px 10px 1px #000;
 	overflow: hidden;
@@ -621,17 +625,17 @@ font-size: 20px;
 
 .image-containerClass1 img{ /*for image only and round*/
 	width: 310px;
-	height: 200px;
+	height: 160px; /*changeit*/
 
 }
-						
+
 						/*lower-containerClass mean all text btn */
 
 .lower-containerClass1{  /*for below image text part*/
 	height: 280px;
 	background: #FFF;
 	padding: 500px;
-	padding-top: 10px;
+	padding-top: 1px;/*changeit*/
 	float: left;
 	position: absolute;
 }
@@ -657,13 +661,13 @@ font-size: 20px;
 	color: black; /*descries... color*/
 	margin-bottom: 15px; /*up and downing buttom*/
 	position: absolute;
-	top: 60px;
+	top: 35px; /*changeit*/
 	left: 40px;///
 	float: left;
 
 
 }
-.lower-containerClass1 .btn1{ 
+.lower-containerClass1 .btn1{
 	background: #7F00FF;
 	border: none;
 	color: white;
@@ -671,7 +675,7 @@ font-size: 20px;
 	font-size: 16px;
 	font-weight: bold;
 	position: absolute;
-	top: 210px;
+	top: 165px;
 	left: 1100px;
 	height: 35px;
 	width: 100px;
@@ -688,21 +692,22 @@ font-size: 20px;
 {
 	position: absolute;
 	left: 1050px;
-	top: 240px;
-	font-size: 20px;
+	top: 196px;   /*changeit*/
+	font-size: 17px;/*changeit*/
 	font-weight: bold;
 	width: 230px;
 }
+
 
 /*for 3 yoga class*/
 
 .card-containerClass3{ /*image background part*/
 	width: 1313px;
-	height: 370px;
+	height: 265px; /*changeit*/
 	background: #FFF;
 	border-radius: 6px;
 	position: absolute;
-	top: 99.30%;
+	top: 41.30%;
 	left: 20px;
 	box-shadow: 0px 1px 10px 1px #000;
 	overflow: hidden;
@@ -713,11 +718,11 @@ font-size: 20px;
 
 .card-containerClass4{ /*image background part*/
 	width: 1313px;
-	height: 370px;
+	height: 265px; /*changeit*/
 	background: #FFF;
 	border-radius: 6px;
 	position: absolute;
-	top: 132%;
+	top: 54%;
 	left: 20px;
 	box-shadow: 0px 1px 10px 1px #000;
 	overflow: hidden;
@@ -726,11 +731,11 @@ font-size: 20px;
 }
 .card-containerClass5{ /*image background part*/
 	width: 1313px;
-	height: 370px;
+	height: 265px; /*changeit*/
 	background: #FFF;
 	border-radius: 6px;
 	position: absolute;
-	top: 165%;
+	top: 66.5%;
 	left: 20px;
 	box-shadow: 0px 1px 10px 1px #000;
 	overflow: hidden;
@@ -739,11 +744,11 @@ font-size: 20px;
 }
 .card-containerClass6{ /*image background part*/
 	width: 1313px;
-	height: 360px;
+	height: 265px; /*changeit*/
 	background: #FFF;
 	border-radius: 6px;
 	position: absolute;
-	top: 198%;
+	top: 79.60%;
 	left: 20px;
 	box-shadow: 0px 1px 10px 1px #000;
 	overflow: hidden;
@@ -757,7 +762,7 @@ font-size: 20px;
 	padding-top: 25px;
 	text-align: center;
 	width: 1210px;
-	padding-left: 40px;
+	padding-left: 110px;
 	font-size: 18px;
 }
 
@@ -1154,3 +1159,6 @@ body {
 {
   font-size: 90px;
 }
+
+
+

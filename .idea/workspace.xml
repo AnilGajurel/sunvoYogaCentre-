@@ -2,24 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56c9e346-b995-42ac-a04f-a23fdaaa18b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/static/sunvoyoga/javascript/myjavascript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/migrations/0002_booking.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/static/sunvoyoga/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/static/sunvoyoga/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/static/sunvoyoga/javascript/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/static/sunvoyoga/javascript/myjavascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/static/sunvoyoga/javascript/myjavascript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/Classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/Classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/booking.html" beforeDir="false" afterPath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/booking.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/error" beforeDir="false" afterPath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/error" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/show.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,89 +22,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/static/sunvoyoga/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="750" column="13" selection-start-line="750" selection-start-column="13" selection-end-line="750" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/static/sunvoyoga/javascript/myjavascript.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/signup.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/booking.html">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/error">
+        <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/Classes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/dashboard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="10" column="2" selection-start-line="10" selection-end-line="11" />
+            <state relative-caret-position="339">
+              <caret line="243" selection-start-line="243" selection-end-line="243" />
             </state>
           </provider>
         </entry>
@@ -132,7 +61,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>! important</find>
       <find>create</find>
       <find>sh</find>
       <find>logout</find>
@@ -154,7 +82,15 @@
       <find>def booking</find>
       <find>signupbottom</find>
       <find>signupform</find>
+      <find>se</find>
       <find>booking</find>
+      <find>logo</find>
+      <find>Textanimation</find>
+      <find>lower-containerClass</find>
+      <find>timeprice</find>
+      <find>yogaintro</find>
+      <find>card-containerClass</find>
+      <find>Content</find>
     </findStrings>
     <replaceStrings>
       <replace>validatesignupForm</replace>
@@ -173,27 +109,28 @@
         <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/AdminLogin.html" />
         <option value="$PROJECT_DIR$/SunvoYogaCentre/SunvoYogaCentre/urls.py" />
         <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/signupAdmin.html" />
-        <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/Home.html" />
         <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/forms.py" />
         <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/authenticate.py" />
         <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/showCustomer.html" />
-        <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/show.html" />
         <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/dashboard.html" />
         <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/edit.html" />
         <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/create.html" />
-        <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/static/sunvoyoga/css/style.css" />
         <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/models.py" />
-        <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/Classes.html" />
-        <option value="$PROJECT_DIR$/SunvoYogaCentre/SunvoYogaCentre/settings.py" />
-        <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/error" />
         <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/login.html" />
         <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/signup.html" />
         <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/booking.html" />
         <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/static/sunvoyoga/javascript/main.js" />
-        <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/layout.html" />
         <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/urls.py" />
+        <option value="$PROJECT_DIR$/SunvoYogaCentre/SunvoYogaCentre/settings.py" />
+        <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/migrations/0001_initial.py" />
+        <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/show.html" />
         <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/views.py" />
+        <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/Home.html" />
+        <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/static/sunvoyoga/javascript/myjavascript.js" />
+        <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/static/sunvoyoga/css/style.css" />
+        <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/Classes.html" />
+        <option value="$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/layout.html" />
       </list>
     </option>
   </component>
@@ -246,15 +183,6 @@
               <item name="SunvoYogaCentre" type="462c0819:PsiDirectoryNode" />
               <item name="SunvoYogaCentre" type="462c0819:PsiDirectoryNode" />
               <item name="sunvoyoga" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="sunvoyoga" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SunvoYogaCentre" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SunvoYogaCentre" type="462c0819:PsiDirectoryNode" />
-              <item name="SunvoYogaCentre" type="462c0819:PsiDirectoryNode" />
-              <item name="sunvoyoga" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -264,6 +192,12 @@
               <item name="sunvoyoga" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="sunvoyoga" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SunvoYogaCentre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SunvoYogaCentre" type="462c0819:PsiDirectoryNode" />
+              <item name="SunvoYogaCentre" type="462c0819:PsiDirectoryNode" />
+              <item name="SunvoYogaCentre" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -311,25 +245,6 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49885583" visible="true" weight="0.19791667" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" sideWeight="0.5011442" side_tool="true" weight="0.13392857" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2749591" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49885583" visible="true" weight="0.19791667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5011442" side_tool="true" weight="0.13392857" />
@@ -341,7 +256,26 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2749591" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.23404256" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49885583" visible="true" weight="0.19791667" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5011442" side_tool="true" weight="0.13392857" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.23404256" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -433,18 +367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2370">
-          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#1;n#input#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1500">
@@ -469,13 +391,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/static/sunvoyoga/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="919" column="21" lean-forward="true" selection-start-line="919" selection-start-column="21" selection-end-line="919" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
@@ -483,31 +398,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/Home.html">
+    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/Classes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="229" selection-start-line="229" selection-end-line="229" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/SunvoYogaCentre/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+        <state relative-caret-position="330">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -518,10 +415,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/dashboard.html">
+    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="10" column="2" selection-start-line="10" selection-end-line="11" />
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/SunvoYogaCentre/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2730">
+          <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1770">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#1;n#input#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/booking.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -532,51 +465,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/login.html">
+    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/booking.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/static/sunvoyoga/javascript/myjavascript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="10" column="2" selection-start-line="10" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
+        <state relative-caret-position="5250">
+          <caret line="182" selection-start-line="182" selection-end-line="182" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/Home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4020">
+          <caret line="134" column="13" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/static/sunvoyoga/javascript/myjavascript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/static/sunvoyoga/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="750" column="13" selection-start-line="750" selection-start-column="13" selection-end-line="750" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/Classes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="243" selection-start-line="243" selection-end-line="243" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SunvoYogaCentre/sunvoyoga/templates/sunvoyoga/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
         </state>
       </provider>
     </entry>
